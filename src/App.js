@@ -1,4 +1,5 @@
 import GlobalStyles from "./GlobalStyles";
+import Button from "./Button";
 
 function App() {
   const switchTheme = () => {
@@ -17,17 +18,15 @@ function App() {
       <h1>styled-jsx</h1>
       <h3>theme test</h3>
       <button onClick={switchTheme}>change theme</button>
+      <Button large>large button</Button>
+      <Button>normal button</Button>
       <style jsx>{`
-        body {
-          background: var(--bg-color);
-          transition: background 0.5s;
-        }
-
         h1 {
+          font-size: 3rem;
           color: var(--primary-color);
         }
-
         h3 {
+          font-size: 2rem;
           color: var(--secondary-color);
         }
       `}</style>

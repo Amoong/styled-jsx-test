@@ -1,5 +1,5 @@
 import GlobalStyles from "./GlobalStyles";
-import Button from "./Button";
+import InnerPage from "./InnerPage";
 
 function App() {
   const switchTheme = () => {
@@ -16,18 +16,22 @@ function App() {
     <div className="App">
       <GlobalStyles />
       <h1>styled-jsx</h1>
-      <h3>theme test</h3>
       <button onClick={switchTheme}>change theme</button>
-      <Button large>large button</Button>
-      <Button>normal button</Button>
+
+      <InnerPage />
+
       <style jsx>{`
+        .App {
+          padding-top: 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
         h1 {
           font-size: 3rem;
           color: var(--primary-color);
-        }
-        h3 {
-          font-size: 2rem;
-          color: var(--secondary-color);
+          margin-bottom: 20px;
         }
       `}</style>
     </div>

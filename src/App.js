@@ -30,7 +30,7 @@ function App() {
         }
         h1 {
           font-size: 3rem;
-          color: var(--primary-color);
+          color: var(--text-color1);
           margin-bottom: 20px;
         }
       `}</style>

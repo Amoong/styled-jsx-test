@@ -14,7 +14,7 @@ function InnerPage() {
         }
         h1 {
           font-size: 3rem;
-          color: var(--third-color);
+          color: var(--text-color2);
           padding-bottom: 20px;
         }
       `}</style>
